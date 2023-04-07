@@ -18,4 +18,5 @@ After you type in your password, you will get a message like this:
 ![Image](Connecting.png)
 
 # **Step 3: Run Some Commands**
-
+Try running the commands `cd`, `ls`, `pwd`, `mkdir`, and `cp` a few times in different ways, both on your computer, and on the remote computer after ssh-ing. 
+![Image](Try.png)
