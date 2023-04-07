@@ -5,7 +5,7 @@ To download Visual Studio Code, go to this [Link](https://code.visualstudio.com/
 # **Step 2: Remotely Connecting**
 Go to this [Link](https://sdacs.ucsd.edu/~icc/index.php) to reset the password of your account. 
 Then go to your Visual Studio Code window and create a new terminal.
-Type in `ssh cs15lsp23kh@ieng6.ucsd.edu` in the terminal. 
+Type in `$ ssh cs15lsp23kh@ieng6.ucsd.edu` in the terminal. 
 If you see something like this:
 ```
 ssh cs15lwi23zz@ieng6.ucsd.edu
@@ -19,4 +19,15 @@ After you type in your password, you will get a message like this:
 
 # **Step 3: Run Some Commands**
 Try running the commands `cd`, `ls`, `pwd`, `mkdir`, and `cp` a few times in different ways, both on your computer, and on the remote computer after ssh-ing. 
-![Image](Try.png)
+The commands that I tried are `ls -lat` and `ls -a`.
+If you have logged into the remote server, the terminal will have a message like this: 
+![Image](WithLoggingIn.png)
+If you want to log out of the remote server, you can use: 
+* Ctrl-D
+* Run the command `exit`
+
+Once you log out of the remote server and run the commands, the terminal will have a message like this: 
+![Image](WithoutLoggingIn.png)
+
+The command `ls -lat` shows all hidden files with permission and is sorted by time. 
+The command `ls -a` shows all hidden files. 
