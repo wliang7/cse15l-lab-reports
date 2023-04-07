@@ -1,8 +1,10 @@
-# **Step 1: Visual Studio Code**
+# **Lab Report 1**
+
+## **Step 1: Visual Studio Code**
 To download Visual Studio Code, go to this [Link](https://code.visualstudio.com/) and follow the instructions to download and install it on your computer. Choose the version that matches your operating system. When installed, the window will look something like this. 
 ![Image](VScode.png)
 
-# **Step 2: Remotely Connecting**
+## **Step 2: Remotely Connecting**
 Go to this [Link](https://sdacs.ucsd.edu/~icc/index.php) to reset the password of your account. 
 Then go to your Visual Studio Code window and create a new terminal.
 Type in `$ ssh cs15lsp23kh@ieng6.ucsd.edu` in the terminal. 
@@ -17,7 +19,7 @@ Type `yes` then give your password.
 After you type in your password, you will get a message like this: 
 ![Image](Connecting.png)
 
-# **Step 3: Run Some Commands**
+## **Step 3: Run Some Commands**
 Try running the commands `cd`, `ls`, `pwd`, `mkdir`, and `cp` a few times in different ways, both on your computer, and on the remote computer after ssh-ing. 
 The commands that I tried are `ls -lat` and `ls -a`.
 If you have logged into the remote server, the terminal will have a message like this: 
