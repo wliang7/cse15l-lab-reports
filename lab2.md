@@ -62,4 +62,6 @@ int[] input1 = {  };
 ArrayExamples.reverseInPlace(input1);
 ```
 The symptom: 
+![Image](result.png)
+
 
