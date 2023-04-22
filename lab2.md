@@ -49,6 +49,7 @@ The relevent arguements to this method are path and query. The values for path i
 The result changes by changing the query, specifically the part after the equal sign. It returns a new request based on the code: `result += parameters[1] + "\n";` which would be `result += hello + "\n"`
 
 ## Part 2
+
 **testReversed method**
 Failure-inducing input:
 ```
