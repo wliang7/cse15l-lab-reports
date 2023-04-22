@@ -86,7 +86,8 @@ After:
     return newArray;
   }
 ```
-The original code did not return a new array and it is more of reversing an empty newArray with null elements and copy it onto the arr, in other words, replacing the original elements in arr with the reversed newArray. 
+The original code did not return a new array and it is more of reversing an empty newArray with null elements and copy it onto the arr, in other words, replacing the original elements in arr with the reversed newArray.
+The fix is reversing the arr by changing the elements in the newArray, so the first index of newArray is the last element of arr, the second index of newArray is the second to the last element of arr. Lastly, return a newArray rather than the original arr.
 
 ## Part 3
 I didn't know how changing the url path and queries changes the content in the url. I also didn't know that how to debug my code by creating a failure-inducing input. 
