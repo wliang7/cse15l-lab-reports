@@ -62,6 +62,29 @@ int[] input1 = {  };
 ArrayExamples.reverseInPlace(input1);
 ```
 The symptom: 
-![Image](result.png)
+![Image](result1.png)
+
+The Bug (before):
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+
+After: 
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length-i-1];
+    }
+    return newArray;
+  }
+```
+
 
 
