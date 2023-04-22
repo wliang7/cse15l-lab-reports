@@ -36,3 +36,5 @@ public class StringServer {
     }  
 }
 ```
+![Image](http://url/firstCommand.png)
+![Image](http://url/secondCommand.png)
