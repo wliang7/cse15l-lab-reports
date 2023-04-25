@@ -59,7 +59,7 @@ assertArrayEquals(new int[]{86, 44, 10, 2, 0}, ArrayExamples.reversed(input2));
 Input that doesn't induce failure:
 ```
 int[] input1 = {  };
-ArrayExamples.reversed(input1);
+assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
 ```
 The symptom: 
 ![Image](result1.png)
