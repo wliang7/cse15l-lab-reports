@@ -54,7 +54,6 @@ The result changes by changing the query, specifically the part after the equal 
 Failure-inducing input:
 ```
 int[] input2 = {0, 2, 10, 44, 86};
-ArrayExamples.reversed(input2);
 assertArrayEquals(new int[]{86, 44, 10, 2, 0}, ArrayExamples.reversed(input2));   
 ```
 Input that doesn't induce failure:
