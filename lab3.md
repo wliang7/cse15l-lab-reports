@@ -3,6 +3,7 @@
 **`find file type -iname "path"`**
 This finds the path without considering uppercase or lowercase. It prevents you from typing extra uppercase letters. 
 
+
 Example 1: 
 ```
 weiting@Emilys-MacBook-Air docsearch % find technical/government/Media -type f
@@ -11,6 +12,7 @@ technical/government/Media/families_saved.txt
 technical/government/Media/Farm_workers.txt
 ```
 This returns the files in Media that consists "fa" in it. 
+
 
 Example 2: 
 ```
@@ -42,12 +44,15 @@ I looked up "find command-line options" on youtube.
 
 **`find file -name file-name -type d/f`**
 This finds the directories in the specific directory that consists a certain name. It not only helps you find files but also directories too. 
+
+
 Example 1: 
 ```
 weiting@Emilys-MacBook-Air docsearch % find technical -name biomed -type d
 technical/biomed
 ```
 There's a directory named biomed in the techinical directory so it returns this directory. 
+
 Example 2: 
 ```
 weiting@Emilys-MacBook-Air docsearch % find technical -name biomed -type f
@@ -66,6 +71,7 @@ Example 1:
 weiting@Emilys-MacBook-Air docsearch % find . -type f -mmin +1 -mmin -5
 ```
 It didn't return anything because non of the files were modified more than 1 minute ago but less than 5 minutes ago. 
+
 Example 2:
 ```
 weiting@Emilys-MacBook-Air docsearch % find . -type f -mtime -10
