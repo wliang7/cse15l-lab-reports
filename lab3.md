@@ -1,6 +1,6 @@
 # CSE 15L Lab Report 3
 ## `find` command
-1. `find file type -iname "path"`
+**`find file type -iname "path"`**
 This finds the path without considering uppercase or lowercase. It prevents you from typing extra uppercase letters. 
 
 Example 1: 
@@ -40,7 +40,7 @@ This returns the files in Media that consists "ge" in it.
 This command is found in this [Link](https://www.youtube.com/watch?v=KCVaNb_zOuw).
 I looked up "find command-line options" on youtube. 
 
-2. `find file -name file-name -type d/f`
+**`find file -name file-name -type d/f`**
 This finds the directories in the specific directory that consists a certain name. It not only helps you find files but also directories too. 
 Example 1: 
 ```
@@ -57,7 +57,8 @@ There's no "file" named biomed in this directory so it returns nothing.
 This command is found in this [Link](https://www.youtube.com/watch?v=skTiK_6DdqU).
 I looked up "find command-line options" on youtube. 
 
-3. `find directory -type filetype -mmin +time`
+
+**`find directory -type filetype -mmin +time`**
 This returns the files modified within a certain period of time. It helps you find files that are modified around a certain time. 
 
 Example 1: 
@@ -106,7 +107,7 @@ These files were modified less than 10 days ago.
 This command is found in this [Link](https://www.youtube.com/watch?v=KCVaNb_zOuw).
 I looked up "find command-line options" on youtube. 
 
-4. find files | xargs wc
+**`find files | xargs wc`**
 This finds the files in a directory and takes in each argument and counts the number of lines, words, and characters in each files.
 It's useful because you don't need to type that many commands. 
 
