@@ -1,142 +1,115 @@
 # CSE 15L Lab Report 3
 ## `find` command
-1. `find file -name "path"`
-Example 1: 
-```
-weiting@Emilys-MacBook-Air docsearch % find technical -name "*10.txt"
-technical/government/Env_Prot_Agen/ctf7-10.txt
-technical/government/Env_Prot_Agen/ctm4-10.txt
-technical/plos/pmed.0010010.txt
-technical/plos/pmed.0020210.txt
-technical/plos/journal.pbio.0020310.txt
-technical/plos/journal.pbio.0020010.txt
-technical/biomed/1471-2121-3-10.txt
-technical/biomed/1471-2199-2-10.txt
-technical/biomed/1471-2091-2-10.txt
-technical/biomed/gb-2001-2-4-research0010.txt
-technical/biomed/1468-6708-3-10.txt
-technical/biomed/1471-2156-3-10.txt
-technical/biomed/1471-2210-1-10.txt
-technical/biomed/1471-2202-4-10.txt
-technical/biomed/1472-6963-2-10.txt
-technical/biomed/1475-2875-2-10.txt
-technical/biomed/1477-7819-1-10.txt
-technical/biomed/1475-925X-2-10.txt
-technical/biomed/1471-2202-2-10.txt
-technical/biomed/1471-2369-3-10.txt
-technical/biomed/1471-2172-3-10.txt
-technical/biomed/1472-6882-2-10.txt
-technical/biomed/1471-2164-3-10.txt
-technical/biomed/1471-230X-1-10.txt
-technical/biomed/1471-2180-3-10.txt
-technical/biomed/1475-4924-1-10.txt
-technical/biomed/1472-6750-2-10.txt
-technical/biomed/1477-7525-1-10.txt
-technical/biomed/1471-2121-2-10.txt
-technical/biomed/1471-2199-3-10.txt
-technical/biomed/1471-2288-2-10.txt
-technical/biomed/1472-6882-1-10.txt
-technical/biomed/1471-2156-4-10.txt
-technical/biomed/1471-2172-2-10.txt
-technical/biomed/1475-2867-2-10.txt
-technical/biomed/1471-2202-3-10.txt
-technical/biomed/1471-2334-3-10.txt
-technical/biomed/1471-2334-1-10.txt
-technical/biomed/1471-213X-1-10.txt
-technical/911report/chapter-10.txt
-```
-Example 2: 
-```
-weiting@Emilys-MacBook-Air docsearch % find technical/government -name "*report.txt"
-technical/government/About_LSC/Progress_report.txt
-technical/government/About_LSC/Strategic_report.txt
-technical/government/About_LSC/commission_report.txt
-```
-2. `find file`
-Example 1: 
-```
-weiting@Emilys-MacBook-Air docsearch % find technical/911report
-technical/911report
-technical/911report/chapter-13.4.txt
-technical/911report/chapter-13.5.txt
-technical/911report/chapter-13.1.txt
-technical/911report/chapter-13.2.txt
-technical/911report/chapter-13.3.txt
-technical/911report/chapter-3.txt
-technical/911report/chapter-2.txt
-technical/911report/chapter-1.txt
-technical/911report/chapter-5.txt
-technical/911report/chapter-6.txt
-technical/911report/chapter-7.txt
-technical/911report/chapter-9.txt
-technical/911report/chapter-8.txt
-technical/911report/preface.txt
-technical/911report/chapter-12.txt
-technical/911report/chapter-10.txt
-technical/911report/chapter-11.txt
-```
-Example 2: 
-```
-weiting@Emilys-MacBook-Air docsearch % find technical/government/About_LSC
-technical/government/About_LSC
-technical/government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
-technical/government/About_LSC/Progress_report.txt
-technical/government/About_LSC/Strategic_report.txt
-technical/government/About_LSC/Comments_on_semiannual.txt
-technical/government/About_LSC/Special_report_to_congress.txt
-technical/government/About_LSC/CONFIG_STANDARDS.txt
-technical/government/About_LSC/commission_report.txt
-technical/government/About_LSC/LegalServCorp_v_VelazquezDissent.txt
-technical/government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt
-technical/government/About_LSC/LegalServCorp_v_VelazquezOpinion.txt
-technical/government/About_LSC/diversity_priorities.txt
-technical/government/About_LSC/reporting_system.txt
-technical/government/About_LSC/State_Planning_Report.txt
-technical/government/About_LSC/Protocol_Regarding_Access.txt
-technical/government/About_LSC/ODonnell_et_al_v_LSCdecision.txt
-technical/government/About_LSC/conference_highlights.txt
-technical/government/About_LSC/State_Planning_Special_Report.txt
-```
+1. `find file type -iname "path"`
+This finds the path without considering uppercase or lowercase. It prevents you from typing extra uppercase letters. 
 
-3. `find file path > stored file`
 Example 1: 
 ```
-weiting@Emilys-MacBook-Air docsearch % find technical/911report > find-results
-.txt
+weiting@Emilys-MacBook-Air docsearch % find technical/government/Media -type f
+ -iname "fa*"
+technical/government/Media/families_saved.txt
+technical/government/Media/Farm_workers.txt
 ```
-**find-results.txt file**
+This returns the files in Media that consists "fa" in it. 
+
+Example 2: 
 ```
-technical/911report
-technical/911report/chapter-13.4.txt
-technical/911report/chapter-13.5.txt
-technical/911report/chapter-13.1.txt
-technical/911report/chapter-13.2.txt
-technical/911report/chapter-13.3.txt
-technical/911report/chapter-3.txt
-technical/911report/chapter-2.txt
-technical/911report/chapter-1.txt
-technical/911report/chapter-5.txt
-technical/911report/chapter-6.txt
-technical/911report/chapter-7.txt
-technical/911report/chapter-9.txt
-technical/911report/chapter-8.txt
-technical/911report/preface.txt
-technical/911report/chapter-12.txt
-technical/911report/chapter-10.txt
-technical/911report/chapter-11.txt
+weiting@Emilys-MacBook-Air docsearch % find technical/government/Media -type f -iname "*ge*"
+technical/government/Media/Federal_agency.txt
+technical/government/Media/Targeting_Domestic_Violence.txt
+technical/government/Media/City_Council_Budget.txt
+technical/government/Media/Law_Award_from_College.txt
+technical/government/Media/agency_expands.txt
+technical/government/Media/FY_04_Budget_Outlook.txt
+technical/government/Media/Funds_Shortage.txt
+technical/government/Media/BergenCountyRecord.txt
+technical/government/Media/Court_Keeps_Judge_From.txt
+technical/government/Media/Avoids_Budget_Cut.txt
+technical/government/Media/Assuring_Underprivileged.txt
+technical/government/Media/Service_Agency.txt
+technical/government/Media/Hard_to_Get.txt
+technical/government/Media/Major_Changes.txt
+technical/government/Media/Program_Lodges.txt
+technical/government/Media/Entities_Merge.txt
+technical/government/Media/A_Perk_of_Age.txt
+technical/government/Media/Greedy_Generous.txt
+technical/government/Media/Aid_Gets_7_Million.txt
 ```
+This returns the files in Media that consists "ge" in it. 
+
+This command is found in this [Link](https://www.youtube.com/watch?v=KCVaNb_zOuw).
+I looked up "find command-line options" on youtube. 
+
+2. `find file -name file-name -type d/f`
+This finds the directories in the specific directory that consists a certain name. It not only helps you find files but also directories too. 
+Example 1: 
+```
+weiting@Emilys-MacBook-Air docsearch % find technical -name biomed -type d
+technical/biomed
+```
+There's a directory named biomed in the techinical directory so it returns this directory. 
+Example 2: 
+```
+weiting@Emilys-MacBook-Air docsearch % find technical -name biomed -type f
+```
+There's no "file" named biomed in this directory so it returns nothing.
+
+This command is found in this [Link](https://www.youtube.com/watch?v=skTiK_6DdqU).
+I looked up "find command-line options" on youtube. 
+
+3. `find directory -type filetype -mmin +time`
+This returns the files modified within a certain period of time. It helps you find files that are modified around a certain time. 
+
+Example 1: 
+```
+weiting@Emilys-MacBook-Air docsearch % find . -type f -mmin +1 -mmin -5
+```
+It didn't return anything because non of the files were modified more than 1 minute ago but less than 5 minutes ago. 
 Example 2:
 ```
-weiting@Emilys-MacBook-Air docsearch % find technical/government/Media -name "
-*2.txt" > find-results.txt
+weiting@Emilys-MacBook-Air docsearch % find . -type f -mtime -10
+./find-results.txt
+./count-txts.sh
+./biomed-sizes.txt
+./.git/objects/02/eedd72994ffb39aa23d64205f2719c131636fe
+./.git/objects/b3/a5d9e617964de69c1182f9e9f39cc28454b57c
+./.git/objects/bc/57964156eee9dcd314f519bc392808b80e3dce
+./.git/objects/c8/8ce76017d970ae70a554206e467e45af937859
+./.git/objects/1f/b07518f4181fbbf1332117c50c414815a3a770
+./.git/objects/19/1c52c38c714c1411f268d3164771cc5a0f12fa
+./.git/objects/72/f00a2fbdfbea4b624e110982416286390b6e03
+./.git/objects/09/c6544185b496f44014f9d5faebaaa22e3ae864
+./.git/objects/08/e4c5d696d4cace3733a8e0178b31f7d71a5f53
+./.git/objects/de/6b86e83d1f32a681a0a6d48bfef8d5c9e4f6d7
+./.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+./.git/logs/HEAD
+./.git/logs/refs/heads/main
+./.git/logs/refs/remotes/origin/HEAD
+./.git/logs/refs/remotes/origin/main
+./.git/logs/refs/remotes/upstream/HEAD
+./.git/refs/heads/main
+./.git/refs/remotes/origin/HEAD
+./.git/refs/remotes/origin/main
+./.git/refs/remotes/upstream/HEAD
+./.git/index
+./.git/COMMIT_EDITMSG
+./.git/FETCH_HEAD
+./grep-results.txt
+./test.sh
+./start.sh
+./technical/find-results.txt
+./technical/grep-results.txt
+./plos-sizes.txt
 ```
-**find-results.txt file**
-```
-technical/government/Media/BusinessWire2.txt
-technical/government/Media/CommercialAppealMemphis2.txt
-```
+These files were modified less than 10 days ago.
+
+This command is found in this [Link](https://www.youtube.com/watch?v=KCVaNb_zOuw).
+I looked up "find command-line options" on youtube. 
 
 4. find files | xargs wc
+This finds the files in a directory and takes in each argument and counts the number of lines, words, and characters in each files.
+It's useful because you don't need to type that many commands. 
+
 Example 1: 
 ```
 weiting@Emilys-MacBook-Air docsearch % find technical/government/About_LSC | x
@@ -161,6 +134,7 @@ wc: technical/government/About_LSC: read: Is a directory
      556    4504   29963 technical/government/About_LSC/State_Planning_Special_Report.txt
    15092  117395  767229 total
 ```
+
 Example 2: 
 ```
 weiting@Emilys-MacBook-Air docsearch % find technical/biomed -name "*3.txt" | xargs wc
@@ -269,4 +243,4 @@ weiting@Emilys-MacBook-Air docsearch % find technical/biomed -name "*3.txt" | xa
      248    1794   14165 technical/biomed/1471-2121-2-3.txt
    56069  389552 2984458 total
 ```
-
+I found this command here [Link](https://ucsd-cse15l-s23.github.io/week/week4/) cause it was taught in class. 
