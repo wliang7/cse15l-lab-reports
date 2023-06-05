@@ -4,7 +4,7 @@
     Using macbook, terminal on VS code
 * Detail the symptom.
      There is a NoClassDefFoundError: org/hamcrest/SelfDescribing error. There is an error when either compiling the files or executing the file. The tester and bash script is expected to run successfully and produce a failure output. 
-    ![Image](screeshot.png)
+    ![Image](screenshot.png)
 * Detail the failure-inducing input and context. 
     failure-inducing input is: 
        `bash grade.sh https://github.com/ucsd-cse15l-w23/lab3.git`
