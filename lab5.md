@@ -1,4 +1,6 @@
 # Lab Report 5
+
+## Part 1 - Debugging Scenario
 1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input it.
 * What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?
     Using macbook, terminal on VS code
@@ -26,13 +28,18 @@ $CPATH:
     ![Image](screenshot1.png)
 4. At the end, all the information needed about the setup including:
 * The file & directory structure needed
-    `ListExamples.java` and `lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar` and `TestListExamples.java`
+    `ListExamples.java` and `lib/hamcrest-core-1.3.jar` and `lib/junit-4.13.2.jar` and `TestListExamples.java` and `grade.sh`
 * The contents of each file before fixing the bug
-    `ListExamples.java`: the content of this file is the compiler to run the `TestListExamples.java` file. 
+    `ListExamples.java`: the content of this file is to create a class to run the `TestListExamples.java` file. 
     `lib/hamcrest-core-1.3.jar` is the file to help run the files and run the testers.
     `lib/junit-4.13.2.jar` is the file to help run the files and run the testers.
     `TestListExamples.java` is the file that the junit test executes on to make sure `ListExamples.java` works. 
+    `grade.sh` is a bash script that helps launching a process using the command line. It executes the process of finding a file and test files and junit test files and runs it. 
 * The full command line (or lines) you ran to trigger the bug
     `bash grade.sh https://github.com/ucsd-cse15l-w23/lab3.git`
 * A description of what to edit to fix the bug 
     Edit the CPATH and add a lib directory before hamcrest-core-1.3.jar because there is a directory before those files. We cannot jump from the current folder to the files. 
+
+## Part 2 - Reflection
+
+I have learned a lot that I've never learned before, like how the gradescope works to run the files and how to create bash scripts so that we don't need to type everything out in the terminal. Also, how to edit a file in the terminal quicker. 
