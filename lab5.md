@@ -4,7 +4,7 @@
     Using macbook, terminal on VS code
 * Detail the symptom.
      There is a NoClassDefFoundError: org/hamcrest/SelfDescribing error. There is an error when either compiling the files or executing the file. The tester and bash script is expected to run successfully and produce a failure output. 
-    ![Image](screeshot)
+    ![Image](screeshot.png)
 * Detail the failure-inducing input and context. 
     failure-inducing input is: 
        `bash grade.sh https://github.com/ucsd-cse15l-w23/lab3.git`
@@ -23,7 +23,7 @@ $CPATH:
 * I would suggest to check whether CPATH is correct. 
 3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
     The CPATH misses a directory lib so the original code failed to find the correct path of the junit file. 
-    ![Image](screenshot1)
+    ![Image](screenshot1.png)
 4. At the end, all the information needed about the setup including:
 * The file & directory structure needed
     `ListExamples.java` and `lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar` and `TestListExamples.java`
