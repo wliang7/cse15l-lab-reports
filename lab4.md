@@ -31,6 +31,10 @@ Key pressed `bash test.sh`
   
 ## Step 9
 Commit and push the resulting change to your Github account
-Key pressed: `git status` `git add ListExamples.java` `git commit` `Adding the ListExamples.java` `<esc><:><w><q>`
+Key pressed: 
+  `git status` 
+  `git add ListExamples.java` 
+  `git commit` 
+  `Adding the ListExamples.java` `<esc><:><w><q>` (escape insert mode save and quit)
 ![Image](Step9.png)
 ![Image](Step9-1.png)
