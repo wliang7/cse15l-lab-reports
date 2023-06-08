@@ -20,12 +20,13 @@ Key pressed `bash test.sh`
 ## Step 7
 Edit the code file `ListExamples.java` to fix the failing test (as a reminder, the error in the code is just that `index1` is used instead of `index2` in the final loop in `merge`)
 Key pressed `vim ListExamples.java` `<enter>`. Then press `</><index1><enter><n><n><n><n><n><n><n><n><n><l><l><l><l><l><x><i><2>`.
+  `</><index1>` is to search index1 in the file. `<n>` is to get the next index1. `<l>` is to go to the right. `<x>` is to delete. `<i>` is to insert. `<2>` is to change to index2. 
 Then `<esc><:><w><q>` to leave editing mode and save and quit vim mode. 
+  `<esc>` is to escape the insert mode. `<:><w><q>` is to save and quit. 
 ![Image](Step7.png)
 ## Step 8
 Run the tests, demonstrating that they now succeed
-Key pressed `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar ListExamplesTests.java` `<enter>` to compile.
-To execute: `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` `<enter>`
+Key pressed `bash test.sh`
 ![Image](Step8.png)
   
 ## Step 9
