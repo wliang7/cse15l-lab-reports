@@ -31,7 +31,6 @@ Run the tests, demonstrating that they now succeed
 Key pressed `bash test.sh`
 ![Image](Step8.png)
  
-![Image](stepppp.png)
   
 ## Step 9
 Commit and push the resulting change to your Github account
@@ -42,3 +41,6 @@ Key pressed:
   `Adding the ListExamples.java` `<esc><:><w><q>` (escape insert mode save and quit)
 ![Image](Step9.png)
 ![Image](Step9-1.png)
+ 
+ 
+ ![Image](stepppp.png)
