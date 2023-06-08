@@ -10,7 +10,7 @@ Clone your fork of the repository from your Github account
 Key pressed `git clone https://github.com/ucsd-cse15l-s23/lab7` <enter> again. 
 The path already exists and is not an empty directory so I deleated this file in hidden holder using `ls -a` <enter> and type `rm -rf lab7` `<enter>`.
 Then I pressed `git clone https://github.com/ucsd-cse15l-s23/lab7` `<enter>`  again. 
-![Image](Step5.png)
+![Image](step.png)
 
 ## Step 6
 Run the tests, demonstrating that they fail
