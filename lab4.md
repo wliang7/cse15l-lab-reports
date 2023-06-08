@@ -2,7 +2,7 @@
 
 ## Step 4
 Log into ieng6
-Key pressed: `ssh cs15lsp23kh@ieng6.ucsd.edu`, then type in the password of my account. 
+Key pressed: `ssh cs15lsp23kh@ieng6.ucsd.edu`, then type in the password of my account. I couldn't use ssh keys because i'm off campus.  
 ![Image](Step4.png)
 
 ## Step 5
@@ -14,8 +14,7 @@ Then I pressed `git clone https://github.com/ucsd-cse15l-s23/lab7` `<enter>`  ag
 
 ## Step 6
 Run the tests, demonstrating that they fail
-Key pressed `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar ListExamplesTests.java` `<enter>` to compile.
-To execute: `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` `<enter>`
+Key pressed `bash test.sh`
 ![Image](Step6.png)
 
 ## Step 7
